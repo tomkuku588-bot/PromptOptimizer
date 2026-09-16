@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN" data-language="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="提示词优化器隐私政策：完全离线，不上传用户提示词。">
+  <meta name="theme-color" content="#f4f0e7">
+  <title>隐私政策｜提示词优化器</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-title-zh="隐私政策｜提示词优化器" data-title-en="Privacy Policy | Prompt Optimizer">
+  <a class="skip-link" href="#main">跳到主要内容 / Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">优</span><span class="brand-copy"><strong>提示词优化器</strong><small>Legal archive · v0.1</small></span></a>
+    <div class="header-tools"><a class="home-link" href="./index.html">协议中心</a><div class="language-switch" role="group" aria-label="语言 / Language"><button type="button" data-set-language="zh" aria-pressed="true">中文</button><button type="button" data-set-language="en" aria-pressed="false">EN</button></div></div>
+  </div></header>
+
+  <main class="page" id="main">
+    <section class="legal-layout" data-language-panel="zh">
+      <nav class="toc" aria-label="目录"><strong>本页目录</strong><a href="#zh-scope">适用范围</a><a href="#zh-data">信息处理</a><a href="#zh-capabilities">系统能力</a><a href="#zh-storage">存储与删除</a><a href="#zh-rights">用户权利</a><a href="#zh-third-party">第三方服务</a><a href="#zh-minors">未成年人</a><a href="#zh-updates">政策更新</a><a href="#zh-contact">联系我们</a></nav>
+      <article class="legal-sheet">
+        <header class="legal-title"><p class="eyebrow">DOCUMENT 01 / PRIVACY</p><h1>隐私政策</h1><p>我们把隐私保护做成产品结构的一部分：核心处理完全在设备本地完成，应用不申请网络权限，也不上传你的 Prompt。</p><div class="meta-row"><span>生效日期：2026 年 9 月 16 日</span><span>适用版本：0.1.0</span><span>运营者：xmgod</span></div></header>
+
+        <section class="legal-section" id="zh-scope"><h2>1. 适用范围</h2><p>本政策适用于《提示词优化器》（包名：<code>com.xmgod.promptoptimizer</code>）在 HarmonyOS 设备上提供的提示词分析、分类、规则化优化、补充信息、任务纠正、模板、历史记录、结果复制及设置管理功能。</p><p class="notice">当前版本完全离线运行，不需要注册或登录，不连接 AI 模型或在线 API，不上传用户输入、优化结果、历史记录或设置。</p></section>
+
+        <section class="legal-section" id="zh-data"><h2>2. 我们处理的信息</h2><p>“处理”包括在你的设备上读取、计算、展示和保存。当前版本涉及的信息如下：</p><div class="data-table-wrap"><table><thead><tr><th>信息类型</th><th>是否处理</th><th>处理目的</th><th>存储位置与期限</th></tr></thead><tbody>
+          <tr><td>账号信息</td><td>否</td><td>当前版本不提供账号体系</td><td>不适用</td></tr>
+          <tr><td>设备标识、广告标识与统计信息</td><td>否</td><td>当前版本不进行广告投放或埋点统计</td><td>不适用</td></tr>
+          <tr><td>用户输入的 Prompt</td><td>是</td><td>在本机进行分析、分类和规则化优化</td><td>编辑期间保存在运行内存；开启“保存历史”后，优化快照保存在应用本地，直至用户删除</td></tr>
+          <tr><td>优化结果与分析快照</td><td>视设置处理</td><td>展示结果、执行本地二次操作及查看历史</td><td>运行内存或应用本地历史数据库，直至用户删除、清除应用数据或卸载</td></tr>
+          <tr><td>语言与优化偏好</td><td>是</td><td>记住用户选择并调整本地输出</td><td>应用本地偏好存储，直至用户修改、清除应用数据或卸载</td></tr>
+          <tr><td>剪贴板内容</td><td>仅写入</td><td>用户点击“复制”时，将选定结果写入系统剪贴板</td><td>由设备系统及用户后续操作管理；应用不读取其他剪贴板内容</td></tr>
+        </tbody></table></div></section>
+
+        <section class="legal-section" id="zh-capabilities"><h2>3. 系统能力和权限</h2><ul><li><strong>网络：</strong>应用不申请 <code>ohos.permission.INTERNET</code>，核心功能不访问网络。</li><li><strong>剪贴板：</strong>只有在你主动点击复制按钮时，应用才将当前结果写入系统剪贴板；不会自动读取剪贴板。</li><li><strong>敏感权限：</strong>当前版本不使用定位、通讯录、相机、麦克风、相册、日历、短信、通话记录或文件选择器等敏感能力。</li></ul></section>
+
+        <section class="legal-section" id="zh-storage"><h2>4. 本地存储、保留与删除</h2><ul><li>历史记录使用 HarmonyOS 本地关系型存储；语言、是否保存历史等设置使用本地偏好存储。</li><li>“保存历史”可在设置中关闭。关闭后，后续成功优化不再新增历史，但不会自动删除此前记录。</li><li>你可以删除单条历史或在应用内清空全部历史；清空全部历史前会再次确认。</li><li>你也可以通过系统设置清除应用数据，或卸载应用，以删除应用本地数据。</li><li>当前版本不提供云端副本或跨设备恢复。清除或卸载前，请自行确认不再需要相关内容。</li></ul></section>
+
+        <section class="legal-section" id="zh-rights"><h2>5. 你的权利</h2><p>你可以在应用内查看、复制和删除本地历史记录，修改语言与优化偏好，以及关闭后续历史保存。由于应用没有账号和服务器，我们无法从远程读取、恢复或代为删除你设备上的内容；相关操作需在当前设备上完成。</p></section>
+
+        <section class="legal-section" id="zh-third-party"><h2>6. 第三方服务与信息共享</h2><p>当前版本不集成第三方 SDK，不提供广告、统计、推送、支付、账号登录、云同步或在线模型服务，也不会主动向任何第三方共享你的 Prompt、优化结果、历史记录或设置。</p><p>当你主动复制内容并粘贴到其他应用、网站或 AI 服务后，后续处理由相应第三方的隐私政策和服务条款约束。</p></section>
+
+        <section class="legal-section" id="zh-minors"><h2>7. 未成年人保护</h2><p>未成年人应在监护人指导下使用本应用，不应在 Prompt 中输入不必要的个人敏感信息，也不应利用优化结果制作、保存或传播违法违规、侵权或不适宜内容。</p></section>
+
+        <section class="legal-section" id="zh-updates"><h2>8. 政策更新</h2><p>如未来版本新增联网、账号、在线模型、统计分析、第三方 SDK 或新的权限场景，我们将在相关功能上线前更新本政策，并通过应用内入口、版本说明或应用市场页面告知用户。更新后的政策自标明的生效日期起适用。</p></section>
+
+        <section class="legal-section" id="zh-contact"><h2>9. 联系我们</h2><p>如对本政策或隐私保护有疑问，请发送邮件至 <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>。为保护隐私，请勿在邮件中附带不必要的 Prompt 内容或个人敏感信息。</p></section>
+      </article>
+    </section>
+
+    <section class="legal-layout" data-language-panel="en">
+      <nav class="toc" aria-label="Contents"><strong>On this page</strong><a href="#en-scope">Scope</a><a href="#en-data">Data processing</a><a href="#en-capabilities">System access</a><a href="#en-storage">Storage & deletion</a><a href="#en-rights">Your rights</a><a href="#en-third-party">Third parties</a><a href="#en-minors">Minors</a><a href="#en-updates">Updates</a><a href="#en-contact">Contact</a></nav>
+      <article class="legal-sheet">
+        <header class="legal-title"><p class="eyebrow">DOCUMENT 01 / PRIVACY</p><h1>Privacy Policy</h1><p>Privacy is part of the product architecture: core processing occurs entirely on your device, the app does not request Internet permission, and your prompts are not uploaded.</p><div class="meta-row"><span>Effective: September 16, 2026</span><span>Applies to: 0.1.0</span><span>Operator: xmgod</span></div></header>
+
+        <section class="legal-section" id="en-scope"><h2>1. Scope</h2><p>This Policy applies to Prompt Optimizer (bundle ID: <code>com.xmgod.promptoptimizer</code>) and its on-device prompt analysis, classification, rule-based optimization, clarification, task correction, templates, history, result copying, and settings features on HarmonyOS devices.</p><p class="notice">The current version operates fully offline. It requires no registration or login, connects to no AI model or online API, and uploads no user input, optimized output, history, or settings.</p></section>
+
+        <section class="legal-section" id="en-data"><h2>2. Information We Process</h2><p>“Process” includes reading, computing, displaying, and storing information on your device. The current version handles the following:</p><div class="data-table-wrap"><table><thead><tr><th>Information</th><th>Processed?</th><th>Purpose</th><th>Location and retention</th></tr></thead><tbody>
+          <tr><td>Account information</td><td>No</td><td>The current version has no account system.</td><td>Not applicable</td></tr>
+          <tr><td>Device or advertising identifiers and analytics</td><td>No</td><td>The current version has no advertising or event analytics.</td><td>Not applicable</td></tr>
+          <tr><td>User-entered prompts</td><td>Yes</td><td>On-device analysis, classification, and rule-based optimization.</td><td>Kept in memory while editing; when “Save history” is enabled, snapshots remain in app-local storage until deleted by the user.</td></tr>
+          <tr><td>Optimized output and analysis snapshots</td><td>Depending on settings</td><td>Display results, perform follow-up local actions, and show history.</td><td>Runtime memory or the app-local history database until deletion, app-data clearing, or uninstallation.</td></tr>
+          <tr><td>Language and optimization preferences</td><td>Yes</td><td>Remember choices and adjust local output.</td><td>App-local preferences until changed, app-data clearing, or uninstallation.</td></tr>
+          <tr><td>Clipboard content</td><td>Write only</td><td>Write a selected result to the system clipboard when the user taps Copy.</td><td>Managed by the operating system and subsequent user actions; the app does not read other clipboard content.</td></tr>
+        </tbody></table></div></section>
+
+        <section class="legal-section" id="en-capabilities"><h2>3. System Capabilities and Permissions</h2><ul><li><strong>Network:</strong> the app does not request <code>ohos.permission.INTERNET</code>, and its core features do not access the Internet.</li><li><strong>Clipboard:</strong> the app writes the current result to the system clipboard only after you tap Copy. It does not automatically read the clipboard.</li><li><strong>Sensitive permissions:</strong> the current version does not use location, contacts, camera, microphone, photo library, calendar, SMS, call logs, file pickers, or similar sensitive capabilities.</li></ul></section>
+
+        <section class="legal-section" id="en-storage"><h2>4. Local Storage, Retention, and Deletion</h2><ul><li>History uses HarmonyOS local relational storage; language and history-saving settings use local preferences.</li><li>You can disable “Save history” in Settings. This stops new records after future successful optimizations but does not automatically remove earlier records.</li><li>You can delete an individual history item or clear all history in the app. Clearing all history requires confirmation.</li><li>You may also delete local app data through system settings or by uninstalling the app.</li><li>The current version has no cloud copy or cross-device recovery. Confirm that you no longer need the content before clearing it or uninstalling.</li></ul></section>
+
+        <section class="legal-section" id="en-rights"><h2>5. Your Rights</h2><p>In the app, you can view, copy, and delete local history, change language and optimization preferences, and disable future history saving. Because the app has no account or server, we cannot remotely read, recover, or delete content on your device; those actions must be performed on that device.</p></section>
+
+        <section class="legal-section" id="en-third-party"><h2>6. Third-Party Services and Sharing</h2><p>The current version integrates no third-party SDKs and provides no advertising, analytics, push notifications, payments, account login, cloud synchronization, or online AI model service. It does not proactively share your prompts, optimized output, history, or settings with any third party.</p><p>Once you intentionally copy content into another app, website, or AI service, later processing is governed by that third party's privacy policy and terms.</p></section>
+
+        <section class="legal-section" id="en-minors"><h2>7. Minors</h2><p>Minors should use the app under guardian guidance. They should avoid entering unnecessary sensitive personal information into prompts or using optimized output to create, store, or distribute illegal, infringing, or inappropriate content.</p></section>
+
+        <section class="legal-section" id="en-updates"><h2>8. Policy Updates</h2><p>If a future version adds connectivity, accounts, online models, analytics, third-party SDKs, or new permission scenarios, we will update this Policy before those features launch and notify users through an in-app entry, release notes, or the app-store page. An updated Policy applies from its stated effective date.</p></section>
+
+        <section class="legal-section" id="en-contact"><h2>9. Contact Us</h2><p>For questions about this Policy or privacy, email <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a>. To protect your privacy, do not attach unnecessary prompt content or sensitive personal information.</p></section>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 xmgod · 提示词优化器 / Prompt Optimizer</p><p><a href="./user-agreement.html">用户协议 / User Agreement</a></p></footer>
+  <script src="./script.js"></script>
+</body>
+</html>

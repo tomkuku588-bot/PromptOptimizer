@@ -16,13 +16,20 @@ for (const page of pages) {
 }
 
 const privacy = await readFile(resolve(root, "privacy-policy.html"), "utf8");
-for (const marker of ["ohos.permission.INTERNET", "剪贴板", "Third-Party Services", "tomkuku588@gmail.com"]) {
+for (const marker of ["应用名称：提示词优化器", "华为应用市场页面公示的开发者（实名认证主体）", "ohos.permission.INTERNET", "剪贴板", "Third-Party Services", "tomkuku588@gmail.com"]) {
   if (!privacy.includes(marker)) throw new Error(`隐私政策缺少关键说明：${marker}`);
 }
 
 const terms = await readFile(resolve(root, "user-agreement.html"), "utf8");
-for (const marker of ["服务边界", "用户行为规范", "Intellectual Property", "Governing Law"]) {
+for (const marker of ["应用名称：提示词优化器", "华为应用市场页面公示的开发者（实名认证主体）", "服务边界", "用户行为规范", "Intellectual Property", "Governing Law"]) {
   if (!terms.includes(marker)) throw new Error(`用户协议缺少关键说明：${marker}`);
+}
+
+for (const page of ["privacy-policy.html", "user-agreement.html"]) {
+  const html = await readFile(resolve(root, page), "utf8");
+  if (/运营者：xmgod|Operator: xmgod/.test(html)) {
+    throw new Error(`${page} 不得把工程 vendor 值 xmgod 显示为开发者/运营者`);
+  }
 }
 
 console.log(`Static legal site verified: ${pages.length} pages, bilingual content, required disclosures present.`);
